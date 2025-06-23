@@ -1,52 +1,65 @@
 # 🚀 GitHub Project Explorer
 
-An interactive, open-source dashboard to explore trending GitHub repositories with advanced filters, analytics, bookmarking, and note-taking capabilities.
+An interactive dashboard to explore trending GitHub repositories with analytics, filtering, bookmarking, and note-taking.
 
-![Banner](https://img.shields.io/github/stars/your-username/github-project-explorer?style=social)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/github-project-explorer)
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+## 🌟 Features
+- 🔍 Search & filter by language, stars, updated date
+- 📊 Charts for stars, forks, and issues (Chart.js)
+- 📌 Bookmark repositories and add notes (localStorage)
+- ⚡ Responsive UI with Tailwind CSS
+- 🔧 Built with React + GitHub API
+
+## 🚀 Live Demo
+[https://your-username.github.io/github-project-explorer](https://your-username.github.io/github-project-explorer)
+
+## 📦 Tech Stack
+- React, Vite
+- Tailwind CSS
+- Chart.js
+- Axios
+- GitHub REST API
+
+## 🛠 Installation
+
+```bash
+git clone https://github.com/your-username/github-project-explorer.git
+cd github-project-explorer
+npm install
+npm run dev
+```
+
+> Create a `.env` file in root:
+```
+VITE_GITHUB_TOKEN=your_github_token_here
+```
+
+## 🔐 GitHub API Token
+Generate a token at https://github.com/settings/tokens with public repo access.
+
+## 📊 Deploy via GitHub Pages
+
+```bash
+npm install --save-dev gh-pages
+```
+
+Update `package.json`:
+
+```json
+"homepage": "https://your-username.github.io/github-project-explorer",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+Deploy:
+```bash
+npm run deploy
+```
+
+## 📝 License
+This project is open-source under the MIT License.
 
 ---
 
-## 🔍 Features
-
-- 🔎 Search GitHub repositories in real-time
-- 🌐 Filter by language, stars, and updated date
-- 📊 Visual analytics using **Chart.js**
-- ⭐ Bookmark repositories with localStorage
-- 📝 Add personal notes to each repository
-- ⚡ Fully responsive UI with **Tailwind CSS**
-- 🧠 Built using **React**, **GitHub REST API**, and **Vite**
-
----
-
-## 📸 Demo
-
-[Live Demo →](https://your-deployment-url.netlify.app/)
-
-> Feel free to fork and customize for your own needs!
-
----
-
-## 🛠 Tech Stack
-
-- **React** (Frontend UI)
-- **GitHub REST API** (Data source)
-- **Tailwind CSS** (Styling)
-- **Chart.js** + `react-chartjs-2` (Analytics)
-- **Vite** (Development and bundling)
-
-Project Structure:- 
-src/
-│
-├── components/        # Reusable UI components
-│   ├── RepoCard.jsx
-│   ├── ChartPanel.jsx
-│   └── BookmarkPanel.jsx
-│
-├── pages/             # Main Dashboard Page
-│   └── Dashboard.jsx
-│
-├── App.jsx            # App Wrapper
-├── main.jsx           # Entry Point
-└── index.css          # Tailwind CSS Styles
+> Built with ❤️ by [Your Name](https://github.com/your-username)
